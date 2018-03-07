@@ -1,3 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Kominote Riral Teknoloji - KoRiTek"
+description = "A non-profit organization focusing on technology development in Haiti."
+theme = "koritek"
