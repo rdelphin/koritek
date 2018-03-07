@@ -5,13 +5,13 @@ name = "Koritek"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://koritek.org/"
 tags = []
 features = []
 min_version = "0.36.1"
 
 [author]
-  name = ""
+  name = "Kenold Beauplan"
   homepage = ""
 
 # If porting an existing theme
