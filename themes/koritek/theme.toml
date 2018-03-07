@@ -8,7 +8,7 @@ description = ""
 homepage = "https://koritek.org/"
 tags = []
 features = []
-min_version = "0.36.1"
+min_version = "0.19"
 
 [author]
   name = "Kenold Beauplan"
