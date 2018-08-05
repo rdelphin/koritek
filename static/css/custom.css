@@ -1,0 +1,21 @@
+/* Custom styles by Kenold Beauplan https://twitter.com/kenold */
+
+section {
+    padding-top: 1.5em;
+    padding-bottom: 1.125em;
+}
+iframe {
+    background: none;
+}
+
+.menu > li {
+    font-size: 14px;
+}
+.menu > li a {
+    font-weight: 700;
+}
+
+/* DONORBOX */
+#donorbox.boxed {
+    padding: 1.4375em 2.4375em 0;
+}
