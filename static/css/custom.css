@@ -21,8 +21,8 @@ iframe {
 }
 
 .cta-5 h4 {
-    font-size: 1em;
     margin-bottom: 1em;
+    white-space: normal;
 }
 
 @media (min-width: 576px) {
