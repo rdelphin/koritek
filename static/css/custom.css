@@ -19,3 +19,14 @@ iframe {
 #donorbox.boxed {
     padding: 1.4375em 2.4375em 0;
 }
+
+.cta-5 h4 {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 576px) {
+    .cta-5 h4 {
+        font-size: 1.4375em;
+    }
+}
