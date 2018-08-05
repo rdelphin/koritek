@@ -22,7 +22,7 @@ iframe {
 
 .cta-5 h4 {
     margin-bottom: 1em;
-    white-space: normal;
+    white-space: normal!important;
 }
 
 @media (min-width: 576px) {
