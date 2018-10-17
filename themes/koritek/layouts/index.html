@@ -12,13 +12,8 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-md-push-1 col-sm-7 col-sm-push-0">
-					<h3>We empower students to reach their academic &amp; social potential.</h3>
-					<p>
-						We want Haitian students to take advantage of the growing campaign in the use of Modern Technology in doing business to carve
-						a niche for themselves and positively affecting their environment by training. This is as we also hope that the participants
-						will also train and even employ others and as such cutting down the rate of unemployment in Haiti.
-					</p>
-					<p>Your donation provides access to technology and Internet to Haitian students who might otherwise go without.</p>
+					<h3>{{ .Site.Params.HomeIntroHeader | safeHTML }}</h3>
+					{{ .Site.Params.HomeIntroSummary | safeHTML }}						
 				</div>
 			</div>
 
@@ -29,10 +24,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-					<h3>We empower students to reach their academic &amp; social potential.</h3>
-					<p class="lead">
-						Your donation provides access to technology and Internet to Haitian students who might otherwise go without.
-					</p>
+					<h3>{{ .Site.Params.HomeIntroHeader | safeHTML }}</h3>
+					<p class="lead">{{ .Site.Params.donateMobileText | safeHTML }}</p>
 					<a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
 				</div>
 			</div>
@@ -132,10 +125,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 					<h3>Our Mission</h3>
-					<p class="lead">
-						To give every student and everyone living in rural areas of Haiti the opportunity to learn computer operations and take complete
-						advantage of the technology.
-					</p>
+					<p class="lead">{{ .Site.Params.mission }}</p>
 					
 					<a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
 				</div>
@@ -164,14 +154,13 @@
 							<div class="card__body col-sm-5 col-md-4 boxed boxed--lg bg--white">
 								<h6>koritek volunteer program</h6>
 								<div class="card__title">
-									<h4>Koritek is about helping others</h4>
+									<h4>{{ .Site.Params.volunteerHeader }}</h4>
 								</div>
-								<p>
-									Learn how you can join us as a volunteer and make a difference in your community.</p>
+								<p>{{ .Site.Params.volunteerSummary }}</p>
 								<hr>
 								<div class="card__lower">
 
-									<span class="h6">join us</span>
+									<span class="h6">{{ .Site.Params.volunteerButton }}</span>
 								</div>
 							</div>
 						</div>
