@@ -34,45 +34,7 @@
 		
 	</section>
 
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="elements--title">
-						<h4>Our Current Projects</h4>
-					</div>
-				</div>
-				{{ range first 2 (where .Pages "Section" "projects") }}
-					<div class="col-md-6 col-sm-6">
-						<a href="{{ .Permalink }}">
-							<div class="card card-4">
-								<div class="card__image">
-										{{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
-										{{ with $ftThumb }}
-											{{ $thumb := $ftThumb.Fill "560x370 center" }}
-											<figure>								
-												<img src="{{ $thumb.Permalink }}" alt="{{with $.Title }}{{ . }}{{ end }}">
-											</figure>	
-										{{ end }}										
-								</div>
-								<div class="card__body boxed boxed--sm bg--white">
-									<h6>{{ .Title }}</h6>
-									<div class="card__title">
-										<h5>{{ .Params.summary }}</h5>
-									</div>
-									<hr>
-									<div class="card__lower">
-										<span class="h6">learn more</span>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-				{{ end }}					
-			</div>
-
-		</div>
-	</section>
+	{{ partial "widgets/projects.html" . }}
 
 	<section>
 		<div class="container">
