@@ -1,0 +1,53 @@
+{{ define "main" }}
+    <section class="blog-post">
+        <div class="blog-post__title bg--secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <h1>{{ .Title }}</h1>                        
+                    </div>
+                </div>                
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">                
+                    {{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
+                    {{ with $ftThumb }}                        
+                        <figure>								
+                            <img src="{{ .Permalink }}" alt="{{with $.Title }}{{ . }}{{ end }}" title="{{ $.Title }}" class="blog-post__hero box-shadow">
+                        </figure>	
+                    {{ end }}
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">                    
+                    {{ .Content }}
+                    <hr>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="blog-post__share">
+                        <h5>Share this project</h5>
+                        <a class="btn btn--sm bg--facebook" href="#">
+                            <span class="btn__text">
+                                <i class="socicon-facebook"></i> Share on Facebook
+                            </span>
+                        </a>
+                        <a class="btn btn--sm bg--twitter" href="#">
+                            <span class="btn__text">
+                                <i class="socicon-twitter"></i> Share on Twitter
+                            </span>
+                        </a>
+                        <a class="btn btn--sm bg--googleplus" href="#">
+                            <span class="btn__text">
+                                <i class="socicon-googleplus"></i> Share on GooglePlus
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+{{ partial "head/head.html" . }}
+
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
+
+	<div class="nav-container">
+		{{ partial "header/site-nav.html" . }}
+	</div>
+
+	<div class="main-container">
+        {{- block "main" . }}{{ end }}
+    </div>
+    <footer class="bg--dark footer-1 text-center-xs">
+		{{ partial "footer/site-footer.html" . }}
+	</footer>
+    
+    {{ partial "footer/scripts.html" . }}
+</body>
+</html>

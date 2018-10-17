@@ -1,0 +1,59 @@
+{{ define "main"}}
+    {{ range where .Pages "Section" "projects" }}
+        <section class="list__section">
+            <div class="container">
+                <div class="row">
+                    <div class="masonry masonry-blog">
+                        <div class="masonry__container masonry--animate masonry--active">
+                            <div class="col-sm-12 masonry__item">
+                                <a href="{{ .Permalink }}">
+                                    <div class="card card--horizontal card-6">
+                                        <div class="card__image col-sm-7 col-md-8">
+                                            {{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
+                                            {{ with $ftThumb }}                        
+                                                <figure>								
+                                                    <img src="{{ .Permalink }}" alt="{{with $.Title }}{{ . }}{{ end }}" title="{{ $.Title }}" class="blog-post__hero box-shadow">
+                                                </figure>	
+                                            {{ end }}
+                                        </div>
+                                        <div class="card__body col-sm-5 col-md-4 boxed boxed--lg bg--white">                                            
+                                            <div class="card__title">
+                                                <h4>{{ .Title }}</h4>
+                                            </div>
+                                            <p>{{ .Params.summary}}</p>                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>                                                
+                        </div>                        
+                    </div>                    
+                </div>                
+            </div> 
+            <hr>         		                
+		</section>        
+    {{ end }}
+    
+    <!-- div class="pagination-container">                    
+        <ul class="pagination">
+            <li>
+                <a href="#">
+                    <span>←</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">1</a>
+            </li>
+            <li>
+                <a href="#">2</a>
+            </li>
+            <li>
+                <a href="#">3</a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>→</span>
+                </a>
+            </li>
+        </ul>
+    </div -->
+{{ end}}
