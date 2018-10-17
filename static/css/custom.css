@@ -24,6 +24,15 @@ iframe {
     margin-bottom: 1em;
     white-space: normal!important;
 }
+/* blog */
+.blog-post .blog-post__title {
+    padding: 5.75em 0 3.75em 0;
+}
+
+.list__section {
+    padding: 5.75em 0 0;
+}
+
 
 @media (min-width: 576px) {
     .cta-5 h4 {
