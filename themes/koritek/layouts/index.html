@@ -1,72 +1,71 @@
-{{ partial "head/head.html" . }}
+{{ define "main" }}	
+	{{ partial "header/home-hero.html" . }}
 
-<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
-
-	<div class="nav-container">
-		{{ partial "header/site-nav.html" . }}
-	</div>
-
-	<div class="main-container">
-		{{ partial "header/home-hero.html" . }}
-
-		<section class="cta cta-8 section--overlap hidden-xs">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5 col-sm-5 text-center">
-						<div id="donorbox" class="boxed bg--white box-shadow">
-							<h4>Stand with us</h4>
-							<p>Donate and join the campaign</p>
-								{{ partial "widgets/donorbox-form.html" . }}
-						</div>
-					</div>
-					<div class="col-md-6 col-md-push-1 col-sm-7 col-sm-push-0">
-						<h3>We empower students to reach their academic &amp; social potential.</h3>
-						<p>
-							We want Haitian students to take advantage of the growing campaign in the use of Modern Technology in doing business to carve
-							a niche for themselves and positively affecting their environment by training. This is as we also hope that the participants
-							will also train and even employ others and as such cutting down the rate of unemployment in Haiti.
-						</p>
-                        <p>Your donation provides access to technology and Internet to Haitian students who might otherwise go without.</p>
+	<section class="cta cta-8 section--overlap hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-5 text-center">
+					<div id="donorbox" class="boxed bg--white box-shadow">
+						<h4>Stand with us</h4>
+						<p>Donate and join the campaign</p>
+							{{ partial "widgets/donorbox-form.html" . }}
 					</div>
 				</div>
-
+				<div class="col-md-6 col-md-push-1 col-sm-7 col-sm-push-0">
+					<h3>We empower students to reach their academic &amp; social potential.</h3>
+					<p>
+						We want Haitian students to take advantage of the growing campaign in the use of Modern Technology in doing business to carve
+						a niche for themselves and positively affecting their environment by training. This is as we also hope that the participants
+						will also train and even employ others and as such cutting down the rate of unemployment in Haiti.
+					</p>
+					<p>Your donation provides access to technology and Internet to Haitian students who might otherwise go without.</p>
+				</div>
 			</div>
-		</section>
 
-        <section class="bg--primary cta cta-6 visible-xs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                        <h3>We empower students to reach their academic &amp; social potential.</h3>
-                        <p class="lead">
-                            Your donation provides access to technology and Internet to Haitian students who might otherwise go without.
-                        </p>
-                        <a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </section>
+		</div>
+	</section>
 
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="elements--title">
-							<h4>Our Current Projects</h4>
-						</div>
+	<section class="bg--primary cta cta-6 visible-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+					<h3>We empower students to reach their academic &amp; social potential.</h3>
+					<p class="lead">
+						Your donation provides access to technology and Internet to Haitian students who might otherwise go without.
+					</p>
+					<a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="elements--title">
+						<h4>Our Current Projects</h4>
 					</div>
+				</div>
+				{{ range first 2 (where .Pages "Section" "projects") }}
 					<div class="col-md-6 col-sm-6">
-						<a href="#">
+						<a href="{{ .Permalink }}">
 							<div class="card card-4">
 								<div class="card__image">
-									<img alt="Pic" src="img/koritek-charity-tablet-project.jpg">
+										{{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
+										{{ with $ftThumb }}
+											{{ $thumb := $ftThumb.Fill "560x370 center" }}
+											<figure>								
+												<img src="{{ $thumb.Permalink }}" alt="{{with $.Title }}{{ . }}{{ end }}">
+											</figure>	
+										{{ end }}										
 								</div>
 								<div class="card__body boxed boxed--sm bg--white">
-									<h6>Computer Lab for Rural School</h6>
+									<h6>{{ .Title }}</h6>
 									<div class="card__title">
-										<h5>This Project will benefit all students in Bocozelle, one of the 5th Sections communal of the commune of Saint-Marc, chief place of Artibonite.</h5>
+										<h5>{{ .Params.summary }}</h5>
 									</div>
 									<hr>
 									<div class="card__lower">
@@ -76,180 +75,151 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-6 col-sm-6">
-						<a href="#">
-							<div class="card card-4">
-								<div class="card__image">
-									<img alt="Pic" src="img/koritek-charity-volunteers-2.jpg">
-								</div>
-								<div class="card__body boxed boxed--sm bg--white">
-									<h6>Teacher Training</h6>
-									<div class="card__title">
-										<h5>We train excellent teachers to become effective advocates and connect them to opportunities to shape change in Haiti's rural schools.</h5>
-									</div>
-									<hr>
-									<div class="card__lower">
-
-										<span class="h6">learn more</span>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>					
-				</div>
-
+				{{ end }}					
 			</div>
 
-		</section>
+		</div>
+	</section>
 
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="elements--title">
-							<h4>Recent News</h4>
-						</div>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="elements--title">
+						<h4>Recent News</h4>
 					</div>
-					{{ range first 2 (where .Pages "Section" "posts") }}
-					<div class="col-md-6 col-sm-12">
-						<div class="card card--horizontal card-2">
-							<div class="card__image col-sm-5">
-								{{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
-									{{ with $ftThumb }}	
-										<div class="background-image-holder" style="background: url({{ .RelPermalink }}); opacity: 1;">
-											<a href="{{ .RelPermalink }}">										
+				</div>
+				{{ range first 2 (where .Pages "Section" "posts") }}
+				<div class="col-md-6 col-sm-12">
+					<div class="card card--horizontal card-2">
+						<div class="card__image col-sm-5">
+							{{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
+							{{ with $ftThumb }}	
+								<div class="background-image-holder" style="background: url({{ .RelPermalink }}); opacity: 1;">
+									<a href="{{ .RelPermalink }}">										
 										<figure>								
-											<img src="{{ .RelPermalink }}" alt="{{ .Params.title }}" title="{{ $.Title }}" itemprop="image">
+											<img src="{{ .RelPermalink }}" alt="{{ .Params.title }}">
 										</figure>										
-										</a>									
+									</a>									
 								</div>
-								{{ end }}
+							{{ end }}
+						</div>
+						<div class="card__body col-sm-7 boxed bg--white">
+							<div class="card__title">
+								<h4>{{ .Title }}</h4>
 							</div>
-							<div class="card__body col-sm-7 boxed bg--white">
+							<span>
+								<em>
+									{{ range .Params.categories }}
+										{{ . }}
+									{{ end }}
+								</em>
+							</span>
+							<p>
+								{{ .Summary }}
+							</p>
+						</div>
+					</div>
+				</div>
+				{{ end }}
+			</div>
+
+		</div>
+	</section>
+
+	<section class="bg--primary cta cta-6">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+					<h3>Our Mission</h3>
+					<p class="lead">
+						To give every student and everyone living in rural areas of Haiti the opportunity to learn computer operations and take complete
+						advantage of the technology.
+					</p>
+					
+					<a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="elements--title">
+						<h4>How You Can Help</h4>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<a href="#">
+						<div class="card card--horizontal card-6">
+							<div class="card__image col-sm-7 col-md-8">
+								<div class="background-image-holder">
+									<img alt="Pic" src="img/koritek-charity-volunteers.jpg">
+								</div>
+							</div>
+							<div class="card__body col-sm-5 col-md-4 boxed boxed--lg bg--white">
+								<h6>koritek volunteer program</h6>
 								<div class="card__title">
-									<h4>{{ .Title }}</h4>
+									<h4>Koritek is about helping others</h4>
 								</div>
-								<span>
-									<em>
-										{{ range .Params.categories }}
-											{{ . }}
-										{{ end }}
-									</em>
-								</span>
 								<p>
-									{{ .Summary }}
-								</p>
-							</div>
-						</div>
-					</div>
-					{{ end }}
-				</div>
+									Learn how you can join us as a volunteer and make a difference in your community.</p>
+								<hr>
+								<div class="card__lower">
 
-			</div>
-		</section>
-
-		<section class="bg--primary cta cta-6">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-						<h3>Our Mission</h3>
-						<p class="lead">
-							To give every student and everyone living in rural areas of Haiti the opportunity to learn computer operations and take complete
-							advantage of the technology.
-						</p>
-						
-                        <a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="elements--title">
-							<h4>How You Can Help</h4>
-						</div>
-					</div>
-					<div class="col-sm-12">
-						<a href="#">
-							<div class="card card--horizontal card-6">
-								<div class="card__image col-sm-7 col-md-8">
-									<div class="background-image-holder">
-										<img alt="Pic" src="img/koritek-charity-volunteers.jpg">
-									</div>
-								</div>
-								<div class="card__body col-sm-5 col-md-4 boxed boxed--lg bg--white">
-									<h6>koritek volunteer program</h6>
-									<div class="card__title">
-										<h4>Koritek is about helping others</h4>
-									</div>
-									<p>
-										Learn how you can join us as a volunteer and make a difference in your community.</p>
-									<hr>
-									<div class="card__lower">
-
-										<span class="h6">join us</span>
-									</div>
+									<span class="h6">join us</span>
 								</div>
 							</div>
-						</a>
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-
-		<section class="bg--secondary partners-1 space--sm">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<h3 class="text-center">Partners</h3>
-						<div class="slider" data-items="4" data-timing="3000">
-							<ul class="slides">
-								<li>
-									<img alt="img" src="img/partner3.png">
-								</li>
-								<li>
-									<img alt="img" src="img/partner5.png">
-								</li>
-								<li>
-									<img alt="img" src="img/partner6.png">
-								</li>
-								<li>
-									<img alt="img" src="img/partner7.png">
-								</li>
-							</ul>
 						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="bg--secondary partners-1 space--sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3 class="text-center">Partners</h3>
+					<div class="slider" data-items="4" data-timing="3000">
+						<ul class="slides">
+							<li>
+								<img alt="img" src="img/partner3.png">
+							</li>
+							<li>
+								<img alt="img" src="img/partner5.png">
+							</li>
+							<li>
+								<img alt="img" src="img/partner6.png">
+							</li>
+							<li>
+								<img alt="img" src="img/partner7.png">
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="bg--primary space--sm cta cta-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<h4>Want to make a difference in your community?&nbsp;
-							<br>
-						</h4>
-						<a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
-					</div>
+		</div>
+	</section>
+	<section class="bg--primary space--sm cta cta-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h4>Want to make a difference in your community?&nbsp;
+						<br>
+					</h4>
+					<a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
 				</div>
-
 			</div>
 
-		</section>
+		</div>
 
-		<footer class="bg--dark footer-1 text-center-xs">
-			{{ partial "footer/site-footer.html" . }}
-		</footer>
-	</div>
-
-	{{ partial "footer/scripts.html" . }}
-</body>
-
-</html>
+	</section>	
+{{ end }}
