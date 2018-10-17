@@ -1,0 +1,23 @@
+{{ define "main" }}
+	<section class="section__top">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-md-8">					
+					<h1>{{ .Params.pageHeader }}</h1>
+					<p>{{ .Content }}</p>					
+				</div>
+
+				<div class="col-6 col-md-4">
+					<h5>sidebar</h5>
+				</div>
+			</div> <!-- /.row -->
+		</div>
+	</section>	
+
+{{ end }}
+
+{{ define "projects" }}
+    <div class="container">
+        {{ partial "widgets/projects.html" . }}
+    </div>
+{{ end }}
