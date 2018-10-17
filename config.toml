@@ -39,14 +39,15 @@ theme = "koritek"
     weight = 6
 
 [params]
-    homeHeader = "Home header"
-    homeIntroHeader = "home intro header"
-    homeIntroSummary = "home intro summary"
-    mission= "mission here"
-    volunteerHeader = "volunteer header"
-    volunteerSummary = "volunteer summary"
-    volunteerButton = "volunteer button"
-    donateFooterText = "donate footer text"
-    footerAbout = "footer about"
+    homeHeader = "Give the life of average Haitian youth a meaning"
+    homeIntroHeader = "We empower students to reach their academic &amp; social potential."
+    homeIntroSummary = "<p>We want Haitian students to take advantage of the growing campaign in the use of Modern Technology in doing business to carve a niche for themselves and positively affecting their environment by training. This is as we also hope that the participants will also train and even employ others and as such cutting down the rate of unemployment in Haiti.</p> <p>Your donation provides access to technology and Internet to Haitian students who might otherwise go without.</p>"
+    mission= "To give every student and everyone living in rural areas of Haiti the opportunity to learn computer operations and take complete advantage of the technology."
+    volunteerHeader = "Koritek is about helping others"
+    volunteerSummary = "Learn how you can join us as a volunteer and make a difference in your community."
+    volunteerButton = "Join us"
+    donateMobileText = "Your donation provides access to technology and Internet to Haitian students who might otherwise go without."
+    donateFooterText = "Want to make a difference in your community?"
+    footerAbout = "KoRiTek is a 501(c)(3) charitable organization."
 
 
