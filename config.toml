@@ -13,10 +13,10 @@ theme = "koritek"
     url  = "/"
     weight = 1
 
-[[menu.main]]
-    name = "About"
-    url  = "/about/"
-    weight = 2
+# [[menu.main]]
+#     name = "About"
+#     url  = "/about/"
+#     weight = 2
 
 [[menu.main]]
     name = "Projects"    
@@ -36,4 +36,17 @@ theme = "koritek"
 [[menu.main]]
     name = "Contact"
     url  = "/contact/"
-    weight = 6    
+    weight = 6
+
+[params]
+    homeHeader = "Home header"
+    homeIntroHeader = "home intro header"
+    homeIntroSummary = "home intro summary"
+    mission= "mission here"
+    volunteerHeader = "volunteer header"
+    volunteerSummary = "volunteer summary"
+    volunteerButton = "volunteer button"
+    donateFooterText = "donate footer text"
+    footerAbout = "footer about"
+
+
