@@ -8,22 +8,9 @@
         </div>
         <div class="nav-module menu-module left">
             <ul class="menu">
-                <li class="active">
-                    <a href="/about">about</a>
-
-                </li>
-                <li>
-                    <a href="/projects">projects</a>
-
-                </li>
-                <li class="vpf">
-                    <a href="/photos">photos </a>
-
-                </li>
-                <li class="vpf">
-                    <a href="/volunteer">get involved</a>
-
-                </li>
+                {{ range .Site.Menus.main }}
+                <li class="vpf"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}             
                 <li class="vpf">
                     <a href="https://donorbox.org/koritek" class="custom-dbox-popup">donate</a>
 
