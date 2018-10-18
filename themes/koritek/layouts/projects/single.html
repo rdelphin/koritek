@@ -33,19 +33,19 @@
                     <hr>
                 </div>
             </div>
-            
-            {{ $pageUrl := .URL | absURL }}
 
+            {{ $pageUrl := .URL }}
+            
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <div class="blog-post__share">
                         <h5>Share this project</h5>
-                        <a class="btn btn--sm bg--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ $pageUrl }}">
+                        <a class="btn btn--sm bg--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://koritek.org/{{ $pageUrl }}">
                             <span class="btn__text">
                                 <i class="socicon-facebook"></i> Share on Facebook
                             </span>
                         </a>
-                        <a class="btn btn--sm bg--twitter" href="https://twitter.com/home?status={{ $pageUrl }}">
+                        <a class="btn btn--sm bg--twitter" href="https://twitter.com/home?status=https://koritek.org/{{ $pageUrl }}">
                             <span class="btn__text">
                                 <i class="socicon-twitter"></i> Share on Twitter
                             </span>
