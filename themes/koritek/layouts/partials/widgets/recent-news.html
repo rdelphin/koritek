@@ -1,0 +1,45 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="elements--title">
+                    <h4>Recent News</h4>
+                </div>
+            </div>
+            {{ range first 2 (where .Pages "Section" "posts") }}
+            <div class="col-md-6 col-sm-12">
+                <div class="card card--horizontal card-2">
+                    <div class="card__image col-sm-5">
+                        {{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
+                        {{ with $ftThumb }}	
+                            <div class="background-image-holder" style="background: url({{ .RelPermalink }}); opacity: 1;">
+                                <a href="{{ .RelPermalink }}">										
+                                    <figure>								
+                                        <img src="{{ .RelPermalink }}" alt="{{ .Params.title }}">
+                                    </figure>										
+                                </a>									
+                            </div>
+                        {{ end }}
+                    </div>
+                    <div class="card__body col-sm-7 boxed bg--white">
+                        <div class="card__title">
+                            <h4>{{ .Title }}</h4>
+                        </div>
+                        <span>
+                            <em>
+                                {{ range .Params.categories }}
+                                    {{ . }}
+                                {{ end }}
+                            </em>
+                        </span>
+                        <p>
+                            {{ .Summary }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+    </div>
+</section>
