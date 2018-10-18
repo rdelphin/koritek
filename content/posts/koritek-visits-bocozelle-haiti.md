@@ -1,9 +1,10 @@
 +++
-title = "Koritek Visits Bocozelle, Haiti"
-date = 2018-03-06T20:43:15-05:00
 categories = ["Trips"]
-tags = []
+date = "2018-03-06T20:43:15.000-05:00"
+post_image = "/uploads/ft-news-koritek-haiti-trip-tablet.jpg"
 slug = ""
-post_image = ""
+tags = []
+title = "Koritek Visits Bocozelle, Haiti"
+
 +++
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
