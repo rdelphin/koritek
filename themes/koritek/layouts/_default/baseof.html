@@ -11,6 +11,9 @@
 	<div class="main-container">
         {{- block "main" . }}{{ end }}		
     </div>
+
+	{{ partial "widgets/donate-bar.html" . }}
+	
     <footer class="bg--dark footer-1 text-center-xs">
 		{{ partial "footer/site-footer.html" . }}
 	</footer>
