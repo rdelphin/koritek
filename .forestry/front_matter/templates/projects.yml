@@ -5,3 +5,8 @@ is_partial: false
 fields:
 - type: text
   default: Project Title
+- type: datetime
+- type: text
+  default: 'ex: /pdf/koritek-computer-lab-project.pdf'
+  name: download
+  label: Download Path
