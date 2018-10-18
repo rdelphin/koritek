@@ -7,7 +7,7 @@
                 </div>
             </div>
 
-            {{ range first 2 (where .Pages "Section" "projects") }}            
+            {{ range first 2 (where .Site.RegularPages "Section" "projects") }}            
                 <div class="col-md-6 col-sm-6">
                     <a href="{{ .Permalink }}">
                         <div class="card card-4">
