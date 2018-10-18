@@ -32,8 +32,8 @@ fields:
   name: weight
   description: Order to place this project on the home page
 - type: textarea
-  name: content
-  label: Content
+  name: body
+  label: body
   config:
     required: true
     wysiwyg: true
