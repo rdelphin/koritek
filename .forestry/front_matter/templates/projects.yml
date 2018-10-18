@@ -32,4 +32,5 @@ fields:
   name: weight
   description: Order to place this project on the home page
 pages:
+- content/projects/img-test.md
 - content/projects/test-project.md
