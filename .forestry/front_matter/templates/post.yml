@@ -1,0 +1,21 @@
+---
+label: Post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: itle
+  config:
+    required: true
+  label: Post Title
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- type: file
+  name: post_image
+  label: Post Image
+  description: 'Max width: 800px'
+  config:
+    maxSize: '0.238419'
