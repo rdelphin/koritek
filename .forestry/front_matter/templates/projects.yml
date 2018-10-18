@@ -31,13 +31,5 @@ fields:
   label: Position Number
   name: weight
   description: Order to place this project on the home page
-- type: textarea
-  name: body
-  label: body
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
 pages:
 - content/projects/test-project.md
