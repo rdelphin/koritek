@@ -13,3 +13,5 @@ fields:
   label: Date
   config:
     required: true
+pages:
+- content/get-involved.md
