@@ -4,6 +4,10 @@ title = "Kominote Riral Teknoloji - KoRiTek"
 description = "A non-profit organization focusing on technology development in Haiti."
 theme = "koritek"
 
+[permalinks]
+projects = "/project/:filename/"
+posts = "/:year/:month/:title/"
+
 [menu]
 
 # Main menu
