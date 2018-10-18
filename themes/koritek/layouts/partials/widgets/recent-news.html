@@ -6,19 +6,16 @@
                     <h4>Recent News</h4>
                 </div>
             </div>
-            {{ range first 2 (where .Pages "Section" "posts") }}
+            {{ range first 2 (where .Site.RegularPages "Section" "posts") }}
             <div class="col-md-6 col-sm-12">
                 <div class="card card--horizontal card-2">
                     <div class="card__image col-sm-5">
-                        {{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
-                        {{ with $ftThumb }}	
-                            <div class="background-image-holder" style="background: url({{ .RelPermalink }}); opacity: 1;">
-                                <a href="{{ .RelPermalink }}">										
-                                    <figure>								
-                                        <img src="{{ .RelPermalink }}" alt="{{ .Params.title }}">
-                                    </figure>										
-                                </a>									
-                            </div>
+                        {{ with .Params.post_image }}
+                            {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                            {{ $resized := $imageResource.Fill "800x533" }}
+                            <figure>
+                                <img src="{{ $resized.RelPermalink }}" alt="Koritek News" />
+                            </figure>
                         {{ end }}
                     </div>
                     <div class="card__body col-sm-7 boxed bg--white">
