@@ -1,6 +1,7 @@
 ---
 title: "Computer Lab for Rural School"
 date: 2018-10-16T20:43:15-05:00
+download: "/pdf/koritek-computer-lab-project.pdf"
 categories: ["Labs"]
 summary: "This Project will benefit all students in Bocozelle, one of the 5th Sections communal of the commune of Saint-Marc, chief place of Artibonite."
 weight: 1
