@@ -8,32 +8,34 @@
             </div>
             {{ range first 2 (where .Site.RegularPages "Section" "posts") }}
             <div class="col-md-6 col-sm-12">
-                <div class="card card--horizontal card-2">
-                    <div class="card__image col-sm-5">
-                        {{ with .Params.post_image }}
-                            {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                            {{ $resized := $imageResource.Fill "800x533" }}
-                            <figure>
-                                <img src="{{ $resized.RelPermalink }}" alt="Koritek News" />
-                            </figure>
-                        {{ end }}
-                    </div>
-                    <div class="card__body col-sm-7 boxed bg--white">
-                        <div class="card__title">
-                            <h4>{{ .Title }}</h4>
+                <a href="{{ .Permalink }}">
+                    <div class="card card--horizontal card-2">
+                        <div class="card__image col-sm-5">
+                            {{ with .Params.post_image }}
+                                {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                                {{ $resized := $imageResource.Fill "800x533" }}
+                                <div class="background-image-holder" style="background: url('{{ $resized.RelPermalink }}'); opacity: 1;" >                                                            
+                                    <img src="{{ $resized.RelPermalink }}" alt="Koritek News" />                                                          
+                                </div>
+                            {{ end }}
                         </div>
-                        <span>
-                            <em>
-                                {{ range .Params.categories }}
-                                    {{ . }}
-                                {{ end }}
-                            </em>
-                        </span>
-                        <p>
-                            {{ .Summary }}
-                        </p>
+                        <div class="card__body col-sm-7 boxed bg--white">
+                            <div class="card__title">
+                                <h4>{{ .Title }}</h4>
+                            </div>
+                            <span>
+                                <em>
+                                    {{ range .Params.categories }}
+                                        {{ . }}
+                                    {{ end }}
+                                </em>
+                            </span>
+                            <p>
+                                {{ .Summary }}
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             {{ end }}
         </div>
