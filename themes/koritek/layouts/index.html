@@ -134,43 +134,6 @@
 
 	</section>
 
-	<section class="bg--secondary partners-1 space--sm">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h3 class="text-center">Partners</h3>
-					<div class="slider" data-items="4" data-timing="3000">
-						<ul class="slides">
-							<li>
-								<img alt="img" src="img/partner3.png">
-							</li>
-							<li>
-								<img alt="img" src="img/partner5.png">
-							</li>
-							<li>
-								<img alt="img" src="img/partner6.png">
-							</li>
-							<li>
-								<img alt="img" src="img/partner7.png">
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="bg--primary space--sm cta cta-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h4>Want to make a difference in your community?&nbsp;
-						<br>
-					</h4>
-					<a class="dbox-donation-button" href="https://donorbox.org/koritek" style="background:#000 url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 75px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #408040; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a>
-				</div>
-			</div>
-
-		</div>
-
-	</section>	
+	{{ partial "widgets/partners.html" . }}	
+		
 {{ end }}
