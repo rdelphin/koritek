@@ -37,3 +37,5 @@ fields:
   description: 'Max width: 800px'
   config:
     maxSize: '0.238419'
+pages:
+- content/posts/test-post.md
