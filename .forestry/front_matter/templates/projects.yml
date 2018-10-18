@@ -39,3 +39,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- content/projects/test-project.md
