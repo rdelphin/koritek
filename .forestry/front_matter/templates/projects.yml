@@ -28,3 +28,11 @@ fields:
   label: Position Number
   name: weight
   description: Order to place this project on the home page
+- type: textarea
+  name: content
+  label: Content
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
