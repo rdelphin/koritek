@@ -12,13 +12,13 @@
                     <a href="{{ .Permalink }}">
                         <div class="card card-4">
                             <div class="card__image">
-                                {{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
-                                {{ with $ftThumb }}
-                                    {{ $thumb := $ftThumb.Fill "560x370 center" }}
-                                    <figure>								
-                                        <img src="{{ $thumb.Permalink }}" alt="{{with $.Title }}{{ . }}{{ end }}">
-                                    </figure>	
-                                {{ end }}										
+                                {{ with .Params.project_image }}
+                                    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                                    {{ $resized := $imageResource.Fill "800x533" }}
+                                    <figure>
+                                        <img src="{{ $resized.RelPermalink }}" alt="Koritek Project" />
+                                    </figure>
+                                {{ end }}									
                             </div>
                             <div class="card__body boxed boxed--sm bg--white">
                                 <h6>{{ .Title }}</h6>

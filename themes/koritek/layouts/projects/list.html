@@ -8,13 +8,16 @@
                             <div class="col-sm-12 masonry__item">
                                 <a href="{{ .Permalink }}">
                                     <div class="card card--horizontal card-6">
-                                        <div class="card__image col-sm-7 col-md-8">
-                                            {{ $ftThumb := (.Resources.ByType "image").GetMatch "images/ft**.jpg" }}
-                                            {{ with $ftThumb }}                        
-                                                <figure>								
-                                                    <img src="{{ .Permalink }}" alt="{{with $.Title }}{{ . }}{{ end }}" title="{{ $.Title }}" class="blog-post__hero box-shadow">
-                                                </figure>	
+                                        <div class="card__image col-sm-7 col-md-8">                                            
+
+                                            {{ with .Params.project_image }}
+                                                {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                                                {{ $resized := $imageResource.Fill "800x533" }}
+                                                <figure>
+                                                    <img src="{{ $resized.RelPermalink }}" alt="Koritek Project" />
+                                                </figure>
                                             {{ end }}
+                                            
                                         </div>
                                         <div class="card__body col-sm-5 col-md-4 boxed boxed--lg bg--white">                                            
                                             <div class="card__title">
