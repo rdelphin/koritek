@@ -1,0 +1,43 @@
+---
+label: Projects
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  default: ''
+  name: title
+  label: Project Title
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Upload Date
+  config:
+    required: true
+- type: text
+  name: summary
+  label: Project Summary
+  config:
+    required: true
+- type: text
+  default: ''
+  name: download
+  label: Download Path
+  description: 'ex: /pdf/koritek-computer-lab-project.pdf'
+- type: tag_list
+  label: Categories
+  name: categories
+- type: number
+  label: Position Number
+  name: weight
+  description: Order to place this project on the home page
+- type: textarea
+  name: content
+  label: Content
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+pages:
+- content/projects/test-project.md
