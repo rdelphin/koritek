@@ -4,9 +4,18 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  default: Project Title
+  default: ''
+  name: title
+  label: Project Title
+  config:
+    required: true
 - type: datetime
+  name: date
+  label: Upload Date
+  config:
+    required: true
 - type: text
-  default: 'ex: /pdf/koritek-computer-lab-project.pdf'
+  default: ''
   name: download
   label: Download Path
+  description: 'ex: /pdf/koritek-computer-lab-project.pdf'
