@@ -34,8 +34,6 @@ fields:
 - type: file
   name: project_image
   label: Project Image
-  description: 'Max width: 940px'
+  description: 'Max width: 800px'
   config:
     maxSize: '0.238419'
-pages:
-- content/projects/img-test.md
