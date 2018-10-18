@@ -31,5 +31,12 @@ fields:
   label: Position Number
   name: weight
   description: Order to place this project on the home page
+- type: file
+  name: project_image
+  label: Project Image
+  description: 'Max width: 940px'
+  config:
+    maxSize: '0.238419'
 pages:
+- content/projects/img-test.md
 - content/projects/test-project.md
