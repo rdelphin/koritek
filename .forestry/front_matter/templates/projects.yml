@@ -24,6 +24,9 @@ fields:
   name: download
   label: Download Path
   description: 'ex: /pdf/koritek-computer-lab-project.pdf'
+- type: tag_list
+  label: Categories
+  name: categories
 - type: number
   label: Position Number
   name: weight
