@@ -1,58 +1,40 @@
 baseURL = "/"
-languageCode = "en-us"
-title = "Kominote Riral Teknoloji - KoRiTek"
 description = "A non-profit organization focusing on technology development in Haiti."
+languageCode = "en-us"
 theme = "koritek"
-
-[permalinks]
-projects = "/project/:filename/"
-posts = "/:year/:month/:title/"
-
-[menu]
-
-# Main menu
-
+title = "Kominote Riral Teknoloji - KoRiTek"
 [[menu.main]]
-    name = "Home"
-    url  = "/"
-    weight = 1
-
-# [[menu.main]]
-#     name = "About"
-#     url  = "/about/"
-#     weight = 2
-
+name = "Home"
+url = "/"
+weight = 1
 [[menu.main]]
-    name = "Projects"    
-    url  = "/projects/"
-    weight = 3
-
+name = "Projects"
+url = "/projects/"
+weight = 3
 [[menu.main]]
-    name = "Photos"
-    url  = "/photos/"
-    weight = 4    
-
+name = "Photos"
+url = "/photos/"
+weight = 4
 [[menu.main]]
-    name = "Get Involved"
-    url  = "/volunteer/"
-    weight = 5
-
+name = "Get Involved"
+url = "/volunteer/"
+weight = 5
 [[menu.main]]
-    name = "Contact"
-    url  = "/contact/"
-    weight = 6
-
+name = "Contact"
+url = "/contact/"
+weight = 6
 [params]
-    cover = "img/haiti-kids-playing-with-fire-tv-tablet.jpg"
-    homeHeader = "Give the life of average Haitian youth a meaning"
-    homeIntroHeader = "We empower students to reach their academic &amp; social potential."
-    homeIntroSummary = "<p>We want Haitian students to take advantage of the growing campaign in the use of Modern Technology in doing business to carve a niche for themselves and positively affecting their environment by training. This is as we also hope that the participants will also train and even employ others and as such cutting down the rate of unemployment in Haiti.</p> <p>Your donation provides access to technology and Internet to Haitian students who might otherwise go without.</p>"
-    mission= "To give every student and everyone living in rural areas of Haiti the opportunity to learn computer operations and take complete advantage of the technology."
-    volunteerHeader = "Koritek is about helping others"
-    volunteerSummary = "Learn how you can join us as a volunteer and make a difference in your community."
-    volunteerButton = "Join us"
-    donateMobileText = "Your donation provides access to technology and Internet to Haitian students who might otherwise go without."
-    donateFooterText = "Want to make a difference in your community?"
-    footerAbout = "KoRiTek is a 501(c)(3) charitable organization."
-
-
+cover = "img/haiti-kids-playing-with-fire-tv-tablet.jpg"
+donateFooterText = "Want to make a difference in your community?"
+donateMobileText = "Your donation provides access to technology and Internet to Haitian students who might otherwise go without."
+footerAbout = "KoRiTek is a 501(c)(3) charitable organization."
+homeHeader = "Give the life of average Haitian youth a meaning"
+homeIntroHeader = "We empower students to reach their academic &amp; social potential."
+homeIntroSummary = "<p>We want Haitian students to take advantage of the growing campaign in the use of Modern Technology in doing business to carve a niche for themselves and positively affecting their environment by training. This is as we also hope that the participants will also train and even employ others and as such cutting down the rate of unemployment in Haiti.</p> <p>Your donation provides access to technology and Internet to Haitian students who might otherwise go without.</p>"
+mission = "To give every student and everyone living in rural areas of Haiti the opportunity to learn computer operations and take complete advantage of the technology."
+volunteerButton = "Join us now"
+volunteerHeader = "Koritek is about helping others"
+volunteerSummary = "Learn how you can join us as a volunteer and make a difference in your community."
+[permalinks]
+posts = "/:year/:month/:title/"
+projects = "/project/:filename/"
