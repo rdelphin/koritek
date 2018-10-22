@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: config.toml
-  label: Config
-  match: "**/*"
 - type: directory
   path: content/projects
   label: Projects
@@ -29,6 +25,10 @@ sections:
   match: "*"
   templates:
   - page
+- type: document
+  path: config.toml
+  label: Config
+  match: "**/*"
 upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
