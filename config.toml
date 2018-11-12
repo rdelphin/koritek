@@ -12,10 +12,10 @@ posts = "/:year/:month/:title/"
 
 # Main menu
 
-[[menu.main]]
-    name = "Home"
-    url  = "/"
-    weight = 1
+# [[menu.main]]
+#     name = "Home"
+#     url  = "/"
+#     weight = 1
 
 # [[menu.main]]
 #     name = "About"
@@ -27,20 +27,20 @@ posts = "/:year/:month/:title/"
     url  = "/projects/"
     weight = 3
 
-[[menu.main]]
-    name = "Photos"
-    url  = "/photos/"
-    weight = 4    
+# [[menu.main]]
+#     name = "Photos"
+#     url  = "/photos/"
+#     weight = 4    
 
 [[menu.main]]
     name = "Get Involved"
     url  = "/volunteer/"
     weight = 5
 
-[[menu.main]]
-    name = "Contact"
-    url  = "/contact/"
-    weight = 6
+# [[menu.main]]
+#     name = "Contact"
+#     url  = "/contact/"
+#     weight = 6
 
 [params]
     cover = "img/haiti-kids-playing-with-fire-tv-tablet.jpg"
