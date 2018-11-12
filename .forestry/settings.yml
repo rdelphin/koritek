@@ -25,6 +25,9 @@ sections:
   match: "*"
   templates:
   - page
+- type: document
+  path: config.toml
+  label: Config
 upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
