@@ -8,6 +8,10 @@ title = "Kominote Riral Teknoloji - KoRiTek"
 # url = "/"
 # weight = 1
 [[menu.main]]
+name = "Directors"
+url = "/directors/"
+weight = 2
+[[menu.main]]
 name = "Projects"
 url = "/projects/"
 weight = 3
