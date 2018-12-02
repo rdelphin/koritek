@@ -1,9 +1,21 @@
 {{ define "main"}}
+    <section class="cover height-70 imagebg" data-overlay="5">
+        <div class="background-image-holder">
+            <img alt="Haiti Kids Playing with Koritek Tablets" src="img/haiti-kids-playing-with-fire-tv-tablet.jpg">
+        </div>
+        <div class="container pos-vertical-center">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Board of Directors</h2>
+                    <p>The board of directors is committed to the oversight of Koritek's important work to create a world where every child in rural sections of Haiti need to have access to technology. Each distinguished member of the voluntary board brings with them a unique set of experiences and expertise which are invaluable to the health and growth our organization.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <section class="bg--white section__top mb-4">
         <div class="container">
-            <h1>Board of Directors</h1>
-            <p>The board of directors is committed to the oversight of Koritek's important work to create a world where every child in rural sections of Haiti need to have access to technology. Each distinguished member of the voluntary board brings with them a unique set of experiences and expertise which are invaluable to the health and growth our organization.</p>
-
             <div class="row">
                 {{ range where .Pages "Section" "directors" }}
                 <div class="col-md-4 col-sm-6 col-xs-6">
