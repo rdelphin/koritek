@@ -11,12 +11,14 @@
                 {{ range .Site.Menus.main }}
                 <li class="vpf"><a href="{{ .URL }}">{{ .Name }}</a></li>
                 {{ end }}             
-                <li class="vpf">
-                    <a href="https://donorbox.org/koritek" class="custom-dbox-popup">donate</a>
-
-                </li>
             </ul>
         </div>
+        <div class="nav-module right">
+            <a href="https://donorbox.org/koritek" class="custom-dbox-popup">
+                <button class="btn btn--primary">DONATE</button>
+            </a>
+        </div>
+
     </div>
     <div class="nav-mobile-toggle visible-sm visible-xs">
         <i class="icon-Align-JustifyAll icon icon--sm"></i>
