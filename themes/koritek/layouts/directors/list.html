@@ -1,0 +1,27 @@
+{{ define "main"}}
+    <section class="bg--white section__top mb-4">
+        <div class="container">
+            <h1>Board of Directors</h1>
+            <p>The board of directors is committed to the oversight of Koritek's important work to create a world where every child in rural sections of Haiti need to have access to technology. Each distinguished member of the voluntary board brings with them a unique set of experiences and expertise which are invaluable to the health and growth our organization.</p>
+
+            <div class="row">
+                {{ range where .Pages "Section" "directors" }}
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="member member-1">
+                        {{ with .Params.photo }}
+                            {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                            {{ $resized := $imageResource.Fill "577x700" }}
+                            
+                            <img src="{{ $resized.RelPermalink }}" alt="Koritek Project" />
+                            
+                        {{ end }}
+                        <h6>{{ .Params.position }}</h6>
+                        <h5>{{ .Title }}</h5>
+                        {{ .Content }}
+                    </div>
+                </div>
+                {{ end }}
+            </div> 
+        </div>                  
+    </section>
+{{ end}}
