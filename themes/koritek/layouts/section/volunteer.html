@@ -1,0 +1,48 @@
+{{ define "main" }}	
+    <section class="section__top mb-4">
+        <div class="container">
+        	<h1>Get Involed with Koritek! <br>Sign up to volunteer.</h1>
+        	<p>
+				Our organization encourages the participation of volunteers who support our mission. If you agree with our mission and are willing to be interviewed and trained in our procedures, we encourage you to complete this application. The information on this form will be kept confidential and will help us find the most satisfying and appropriate volunteer opportunity for you. Thank you for your interest in our organization.
+			</p>
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <form name="volunterr" method="POST" netlify>
+                        <div class="input-with-icon col-sm-12">
+                            <input class="validate-required" type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-with-icon col-sm-6">
+                            <input class="validate-required validate-email" type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-with-icon col-sm-6">
+                            <input type="tel" name="telephone" placeholder="Phone Number">
+                        </div>
+                        <div class="input-with-icon col-sm-6">
+                            <input type="text" name="country" placeholder="What country are you living in?">
+                        </div>
+                        <div class="input-with-icon col-sm-6">
+                            <input type="text" name="city" placeholder="City">
+                        </div>
+                        <div class="input-with-icon col-sm-12">                   
+                            <label for="skills">Any special talents or skills you have that you feel would benefit our organization?</label>
+                            <input type="text" name="skills" placeholder="Enter your skills">
+                        </div>
+                       
+                        <div class="col-sm-12">
+                        	As a volunteer of our organization I agree to abide by the policies and procedures. I understand that I will be volunteering at my own risk and that the organization, its employees and affiliates, cannot assume any responsibility for any liability for any accident, injury or health problem which may arise from any volunteer work I perform for the organization. I agree that all the work I do is on a volunteer basis and I am not eligible to receive any monetary payment or reward.
+                        </div>
+                        
+                        <div class="col-sm-12 k-mt-4">
+                            <button type="submit" class="btn btn--primary vpe">
+                                Submit Form
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+{{ end }}
