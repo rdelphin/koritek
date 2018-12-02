@@ -1,5 +1,5 @@
 +++
-title = "Pacius John Bull"
+title = "John Bull Pacius"
 position = "Director"
 date = 2018-10-16T20:43:15-05:00
 photo = "/uploads/pacius-john-bull.jpg"
