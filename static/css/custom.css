@@ -15,6 +15,24 @@ iframe {
     font-weight: 700;
 }
 
+.nav-bar.nav--absolute:not(.nav--fixed) .nav-module.right:not(.logo-module):not(.menu-module):not( :nth-last-child(2)) {
+    border: 0;
+}
+
+.nav-bar .nav-module.right:not(.logo-module):not(.menu-module):not( :nth-last-child(2)) {
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0 1.625em;
+}
+
+.nav-module button {
+    font-size: 0.825em !important;
+    height: 40px;
+}
+
+.btn {
+    font-weight: bold;
+}
+
 /* DONORBOX */
 #donorbox.boxed {
     padding: 1.4375em 2.4375em 0;
