@@ -30,4 +30,4 @@ This Project will benefit all students in rural area as well as all teachers. We
 
 ##### Estimated Budget
 
-$24,236.00
+$9,900.00/school
