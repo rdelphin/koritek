@@ -3,7 +3,7 @@ categories = ["Labs"]
 date = "2018-10-16T20:43:15.000-05:00"
 download = "/pdf/koritek-computer-lab-project.pdf"
 project_image = "/uploads/ft-koritek-charity-tablet-project.jpg"
-summary = "This Project will benefit all students in Bocozelle, one of the 5th Sections communal of the commune of Saint-Marc, chief place of Artibonite."
+summary = "This Project will benefit all students in rural area as well as all teachers.  We in KORITEK, we believe the lack of adequate school resources and poor training of the teachers in rural area are the principal reasons we see so many countryside/village people flee to the cities leaving their villages with no hope for the future."
 title = "Computer Lab for Rural School"
 weight = 1
 
