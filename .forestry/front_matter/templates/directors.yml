@@ -1,0 +1,22 @@
+---
+label: Directors
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Name
+  name: title
+  config:
+    required: true
+- type: text
+  name: position
+  label: Position
+- type: datetime
+  name: date
+  label: Date
+- type: file
+  name: photo
+  label: Photo
+- type: text
+  name: weight
+  label: Sort Order
