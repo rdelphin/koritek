@@ -6,4 +6,4 @@ title = "Yvens Charlot"
 weight = 3
 
 +++
-Yvens charlot is an active duty personal in the armed forces of the United States; He is a CompTIA Security + Certify. Yvens Charlot has a deep experience in Network Administration and satellite communication. He is working toward his bachelor degree in computer.
+Yvens charlot is an active duty personal in the armed forces of the United States; He is a CompTIA Security + Certify. Yvens Charlot has a deep experience in Network Administration and satellite communication. He is working toward his bachelor degree in computer science.
