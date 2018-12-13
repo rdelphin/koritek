@@ -6,4 +6,4 @@ title = "Roger Delphin"
 weight = 1
 
 +++
-Roger Delphin leads KORITEK, Inc. with the belief that student in rural areas can be as productive and competitive as the student in the cities if they have the resources. Roger Delphin holds an MBA in Devry/Keller University in Database programming and Administration. He also the co-founder of Movie Lakay.
+Roger Delphin leads KORITEK, Inc. with the belief that student in rural areas can be as productive and competitive as the student in the cities if they have the resources. Roger Delphin holds an MBA in Devry/Keller University in Database programming and Administration. He is the co-founder of Movie Lakay.
