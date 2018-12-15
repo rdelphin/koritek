@@ -32,6 +32,10 @@ iframe {
 .btn {
     font-weight: bold;
 }
+.partners-1 .slider img {
+    max-height: 3rem;
+    opacity: 1;
+}
 
 /* DONORBOX */
 #donorbox.boxed {
