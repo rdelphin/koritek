@@ -20,3 +20,5 @@ fields:
 - type: text
   name: weight
   label: Sort Order
+pages:
+- content/directors/nesly-gelin.md
