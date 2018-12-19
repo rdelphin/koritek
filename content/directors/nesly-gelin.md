@@ -1,5 +1,5 @@
 +++
-date = ""
+date = "2018-12-19T00:00:00-05:00"
 draft = true
 photo = "/uploads/NeslyGelin.jpg"
 position = "Advisor"
