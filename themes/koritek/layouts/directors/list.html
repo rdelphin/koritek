@@ -1,7 +1,7 @@
 {{ define "main"}}
-    <section class="cover height-70 imagebg" data-overlay="5">
+    <section class="cover height-60 imagebg" data-overlay="5">
         <div class="background-image-holder">
-            <img alt="Haiti Kids Playing with Koritek Tablets" src="img/haiti-kids-playing-with-fire-tv-tablet.jpg">
+            <!-- <img alt="Haiti Kids Playing with Koritek Tablets" src="img/haiti-kids-playing-with-fire-tv-tablet.jpg"> -->
         </div>
         <div class="container pos-vertical-center">
             <div class="row">
@@ -16,7 +16,7 @@
 
     <section class="bg--white section__top mb-4">
         <div class="container">
-            <div class="row">
+            <div class="row row-flex">
                 {{ range where .Pages "Section" "directors" }}
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="member member-1">
@@ -24,7 +24,7 @@
                             {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                             {{ $resized := $imageResource.Fill "577x700" }}
                             
-                            <img src="{{ $resized.RelPermalink }}" alt="{{ $.Title }}" />
+                            <img src="{{ $resized.RelPermalink }}" alt="Koritek Director" />
                             
                         {{ end }}
                         <h6>{{ .Params.position }}</h6>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Labs on Kominote Riral Teknoloji - KoRiTek</title>
+    <link>/categories/labs/</link>
+    <description>Recent content in Labs on Kominote Riral Teknoloji - KoRiTek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Oct 2018 20:43:15 -0500</lastBuildDate>
+    
+	<atom:link href="/categories/labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computer Lab for Rural School</title>
+      <link>/project/computer-lab/</link>
+      <pubDate>Tue, 16 Oct 2018 20:43:15 -0500</pubDate>
+      
+      <guid>/project/computer-lab/</guid>
+      <description>Our Mission KORITEK (KOminoté RIral TEKnology) is non-profit organization whose primary mission is built a pathways out of computer illiterate student in rural area in Haiti by providing them with the tools needed for a better education and obviously close the technology gaps in Rural Area.
+Our Work We offer computer training/classes to teachers and student in Rural Area.
+Objective Build awareness of the importance of Education for Rural People as a crucial step to achieve the Millennium goals of eradicating extreme poverty and hunger and achieving universal primary education; Overcome the urban-rural education gap; Increase access to basic Education for rural people; Improve the quality of basic education in rural areas; Foster the national capacity to plan and implement basic education plans to address the learning needs of rural people.</description>
+    </item>
+    
+  </channel>
+</rss>

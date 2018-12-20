@@ -36,13 +36,7 @@ iframe {
     max-height: 3rem;
     opacity: 1;
 }
-.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-[class*="col-"] {
-    margin-bottom: 10px;
-}
+
 /* DONORBOX */
 #donorbox.boxed {
     padding: 1.4375em 2.4375em 0;
@@ -58,7 +52,7 @@ iframe {
 }
 
 .section__top {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .elements--title {
