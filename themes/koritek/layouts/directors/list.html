@@ -24,7 +24,7 @@
                             {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                             {{ $resized := $imageResource.Fill "577x700" }}
                             
-                            <img src="{{ $resized.RelPermalink }}" alt="Koritek Project" />
+                            <img src="{{ $resized.RelPermalink }}" alt="{{ $.Title }}" />
                             
                         {{ end }}
                         <h6>{{ .Params.position }}</h6>
