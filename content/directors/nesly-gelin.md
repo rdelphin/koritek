@@ -6,4 +6,4 @@ title = "Nesly Gelin"
 weight = 6
 
 +++
-Nesly Gelin is the regional director of DINEPA. He is an engineer focus in sanitation and portable water.
+Nesly Gelin is a regional director of DINEPA. He is an engineer focus in sanitation and portable water.
