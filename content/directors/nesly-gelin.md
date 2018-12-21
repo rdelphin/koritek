@@ -6,4 +6,4 @@ title = "Nesly Gelin"
 weight = 6
 
 +++
-Nesly Gelin is a regional director of DINEPA. He is an engineer focus in sanitation and portable water.
+Nesly Gelin is the regional director of DINEPA of Artibonite and the Central Plateau. He is an engineer focus in sanitation and portable water. Nesly is a proud supporter for technology in school in Rural Area, his advice and his support play a good role in our decision making.
