@@ -27,4 +27,4 @@ fields:
   config:
     required: true
 pages:
-- events/test-online-event.md
+- content/events/event-online.md
