@@ -1,0 +1,25 @@
+---
+label: Events
+hide_body: false
+is_partial: false
+fields:
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: location
+  label: Location
+  config:
+    required: true
+- type: text
+  name: time
+  label: Time
+  config:
+    required: true
