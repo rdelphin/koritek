@@ -1,0 +1,19 @@
+{{ define "main"}}
+    
+    <section class="bg--white section__top mb-4">
+        <div class="container">
+            <h1>Koritek Events</h1>
+            <div class="row row-flex">
+                {{ range where .Pages "Section" "events" }}
+                <div class="col-md-4 col-sm-6 col-xs-6">                                           
+                    <span class="date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span> - <span class="location">{{ .Params.location }}</span> at <span class="time">{{ .Params.time }}</span>
+                    <h5 class="event-title">{{ .Title }}</h5>
+                                        
+                    {{ .Content }}
+                    <hr>             
+                </div>
+                {{ end }}
+            </div> 
+        </div>                  
+    </section>
+{{ end}}
