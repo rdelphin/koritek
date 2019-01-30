@@ -8,16 +8,19 @@ fields:
   label: Date
   config:
     required: true
+  default: 2019-02-07 19:00:00 -0500
 - type: text
   name: title
   label: Title
   config:
     required: true
+  default: Event forestry
 - type: text
   name: location
   label: Location
   config:
     required: true
+  default: Saint-Louis du Nord
 - type: text
   name: time
   label: Time
