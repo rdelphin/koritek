@@ -10,12 +10,13 @@
                 {{ end }}
                 {{ range where .Pages "Section" "events" }}
                 <div class="col-md-12"> 
-                    {{ $d := .Date }} {{ $d}} <br />
-                    {{ $d.After now }}                                         
-                    <span class="date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span> - <span class="location">{{ .Params.location }}</span> at <span class="time">{{ .Params.time }}</span>
+                    <!-- {{ $d := .Date }} {{ $d}} <br />
+                    {{ $d.After now }}                                          -->
+                    <span class="date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
                     <h5 class="event-title">{{ .Title }}</h5>
-                                        
-                    {{ .Content }}
+                    <span class="location">{{ .Params.location }}</span> 
+                    at <span class="time">{{ dateFormat "3" .Date }}:{{ dateFormat "04" .Date }}{{ dateFormat "PM" .Date }}</span>
+                    <p>{{ .Content }}</p>                                                        
                     <hr>             
                 </div>
                 {{ end }}
