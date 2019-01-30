@@ -3,6 +3,7 @@ description = "A non-profit organization focusing on technology development in H
 languageCode = "en-us"
 theme = "koritek"
 title = "Kominote Riral Teknoloji - KoRiTek"
+buildFuture = true
 # [[menu.main]]
 # name = "Home"
 # url = "/"
