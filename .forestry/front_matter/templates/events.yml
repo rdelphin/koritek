@@ -26,5 +26,3 @@ fields:
   label: Time
   config:
     required: true
-pages:
-- events/test-online-event.md
