@@ -15,10 +15,10 @@ weight = 2
 name = "Projects"
 url = "/projects/"
 weight = 3
-# [[menu.main]]
-# name = "Photos"
-# url = "/photos/"
-# weight = 4
+[[menu.main]]
+name = "Events"
+url = "/events/"
+weight = 4
 [[menu.main]]
 name = "Get Involved"
 url = "/volunteer/"
