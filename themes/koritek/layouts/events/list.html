@@ -9,9 +9,14 @@
                     <h5>No events.</h5>
                 {{ end }}
                 {{ range where .Pages "Section" "events" }}
+                    {{ $d := .Date }}
+                    {{ if $d.After now }}
+                        <h4>Upcoming Events</h4>
+                    {{ else }}
+                        <h4>Past Events</h4>
+                    {{ end }}
                 <div class="col-md-12"> 
-                    <!-- {{ $d := .Date }} {{ $d}} <br />
-                    {{ $d.After now }}                                          -->
+                    
                     <span class="date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
                     <h5 class="event-title">{{ .Title }}</h5>
                     <span class="location">{{ .Params.location }}</span> 
