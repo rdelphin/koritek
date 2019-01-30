@@ -26,3 +26,5 @@ fields:
   label: Time
   config:
     required: true
+pages:
+- content/events/event-online.md
