@@ -85,7 +85,9 @@ iframe {
 h5.event-title {
     margin-bottom: .5em!important;
 }
-
+.ended {
+    color: red!important;
+}
 @media (min-width: 576px) {
     .cta-5 h4 {
         font-size: 1.4375em;
