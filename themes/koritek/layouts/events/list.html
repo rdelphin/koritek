@@ -3,27 +3,22 @@
     <section class="bg--white section__top mb-4">
         <div class="container">
             <h1>Koritek Events</h1>
-            <div class="row row-flex">
+            <div class="row">
                 {{ $eventsCount := len (where .Site.RegularPages "Section" "=" "events") }}
                 {{ if eq $eventsCount 0 }}
                     <h5>No events.</h5>
                 {{ end }}
-                {{ range where .Pages "Section" "events" }}
-                    {{ $d := .Date }}
-                    {{ if $d.After now }}
-                        <h4>Upcoming Events</h4>
-                    {{ else }}
-                        <h4>Past Events</h4>
-                    {{ end }}
-                <div class="col-md-12"> 
-                    
-                    <span class="date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
-                    <h5 class="event-title">{{ .Title }}</h5>
-                    <span class="location">{{ .Params.location }}</span> 
-                    at <span class="time">{{ dateFormat "3" .Date }}:{{ dateFormat "04" .Date }}{{ dateFormat "PM" .Date }}</span>
-                    <p>{{ .Content }}</p>                                                        
-                    <hr>             
-                </div>
+                {{ range where .Pages "Section" "events" }}                    
+                    <div class="col-md-12">
+                        {{ $d := .Date }}                                                
+                        <span class="date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span> 
+                        <span class="ended">{{ if $d.Before now }}(ended){{ end }}</span>
+                        <h5 class="event-title">{{ .Title }}</h5>
+                        <span class="location">{{ .Params.location }}</span> 
+                        at <span class="time">{{ dateFormat "3" .Date }}:{{ dateFormat "04" .Date }}{{ dateFormat "PM" .Date }}</span>
+                        <p>{{ .Content }}</p>                                                        
+                        <hr>             
+                    </div>
                 {{ end }}
             </div> 
         </div>                  
