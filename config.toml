@@ -1,4 +1,4 @@
-baseURL = "https://www.koritek.org"
+baseURL = "https://koritek.org"
 buildFuture = true
 description = "A non-profit organization focusing on technology development in Haiti."
 languageCode = "en-us"
