@@ -1,13 +1,9 @@
-baseURL = "/"
+baseURL = "https://www.koritek.org"
+buildFuture = true
 description = "A non-profit organization focusing on technology development in Haiti."
 languageCode = "en-us"
 theme = "koritek"
 title = "Kominote Riral Teknoloji - KoRiTek"
-buildFuture = true
-# [[menu.main]]
-# name = "Home"
-# url = "/"
-# weight = 1
 [[menu.main]]
 name = "Directors"
 url = "/directors/"
@@ -24,10 +20,6 @@ weight = 4
 name = "Get Involved"
 url = "/volunteer/"
 weight = 5
-# [[menu.main]]
-# name = "Contact"
-# url = "/contact/"
-# weight = 6
 [params]
 cover = "img/haiti-kids-playing-with-fire-tv-tablet.jpg"
 donateFooterText = "Want to make a difference in your community?"
