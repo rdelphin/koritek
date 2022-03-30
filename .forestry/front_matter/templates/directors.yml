@@ -1,7 +1,6 @@
 ---
 label: Directors
 hide_body: false
-is_partial: false
 fields:
 - type: text
   label: Name
