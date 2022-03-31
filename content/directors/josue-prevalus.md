@@ -1,5 +1,6 @@
 +++
-date = "2018-10-16T20:43:15.000-05:00"
+date = 2018-10-17T01:43:15Z
+draft = true
 photo = "/uploads/josue-prevalus.jpg"
 position = "Director"
 title = "Josue Prevalus"
