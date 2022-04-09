@@ -1,9 +1,9 @@
 +++
-date = "2018-10-16T20:43:15.000-05:00"
+date = 2018-10-17T01:43:15Z
 title = "About Us"
 type = "page"
 [menu.main]
-weight = 2
+weight = 1
 
 +++
 KORITEK (KOminote RIral TEKnology) is a non-profit organization whose primary mission is to build different pathways for the technology wise illiterate students in the rural area;”Haiti”.  Our main aim is to equip their schools with the tools that are really required for a better education to overcome the technology gaps in Rural Area. We provide special trainings to the respected teachers so that they may able to educate the children of Haiti in a well manner. Unfortunately, there is no electricity and technology oriented devices such as computers or tablets in any of their school’s classrooms.

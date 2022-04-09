@@ -5,21 +5,21 @@ languageCode = "en-us"
 theme = "koritek"
 title = "Kominote Riral Teknoloji - KoRiTek"
 [[menu.main]]
-name = "Directors"
-url = "/directors/"
-weight = 2
-[[menu.main]]
-name = "Projects"
-url = "/projects/"
-weight = 3
+name = "Get Involved"
+url = "/volunteer/"
+weight = 5
 [[menu.main]]
 name = "Events"
 url = "/events/"
 weight = 4
 [[menu.main]]
-name = "Get Involved"
-url = "/volunteer/"
-weight = 5
+name = "Projects"
+url = "/projects/"
+weight = 3
+[[menu.main]]
+name = "Directors"
+url = "/directors/"
+weight = 2
 [params]
 cover = "img/haiti-kids-playing-with-fire-tv-tablet.jpg"
 donateFooterText = "Want to make a difference in your community?"
