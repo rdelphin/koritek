@@ -1,10 +1,10 @@
 +++
-title = "Teacher Training"
-date = "2018-10-16 06:43:15 +0000"
 categories = ["Training"]
+date = 2023-03-17T06:43:15Z
+project_image = "/uploads/whatsapp-image-2023-04-05-at-6-01-53-pm-5.jpeg"
 summary = "We train excellent teachers to become effective advocates and connect them to opportunities to shape change in Haiti's rural schools."
+title = "Teacher Technology Training"
 weight = 2
-project_image = "/uploads/ft-koritek-charity-volunteers-2.jpg"
 
 +++
 ##### Teachers Training Program
