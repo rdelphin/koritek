@@ -1,6 +1,7 @@
 +++
 categories = ["Training"]
 date = 2023-03-17T06:43:15Z
+draft = true
 project_image = "/uploads/whatsapp-image-2023-04-05-at-6-01-53-pm-5.jpeg"
 summary = "We train excellent teachers to become effective advocates and connect them to opportunities to shape change in Haiti's rural schools."
 title = "Teacher Technology Training"
