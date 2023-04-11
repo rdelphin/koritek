@@ -1,11 +1,11 @@
 +++
 categories = ["Labs"]
-date = "2018-10-16T20:43:15.000-05:00"
+date = 2018-10-17T01:43:15Z
 download = "/pdf/koritek-computer-lab-project.pdf"
 project_image = "/uploads/ft-koritek-charity-tablet-project.jpg"
 summary = "This Project will benefit all students in rural area as well as all teachers.  We in KORITEK, we believe the lack of adequate school resources and poor training of the teachers in rural area are the principal reasons we see so many countryside/village people flee to the cities leaving their villages with no hope for the future."
 title = "Computer Lab for Rural School"
-weight = 1
+weight = 2
 
 +++
 ##### Our Mission
