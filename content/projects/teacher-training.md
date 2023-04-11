@@ -1,7 +1,7 @@
 +++
 categories = ["Training"]
 date = 2023-03-17T06:43:15Z
-project_image = "/uploads/3t250_bokozel600px.jpg"
+project_image = "/uploads/3t250_bokozel512px.jpg"
 summary = "We train excellent teachers to become effective advocates and connect them to opportunities to shape change in Haiti's rural schools."
 title = "Teacher Technology Training"
 weight = 2
