@@ -1,6 +1,5 @@
 +++
 date = 2023-04-01T04:00:00Z
-draft = true
 location = "Bocozelle, Haiti"
 time = "9:00AM - 3:00PM"
 title = "Teacher Technology Training"
