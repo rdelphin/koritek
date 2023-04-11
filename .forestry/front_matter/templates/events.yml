@@ -27,3 +27,4 @@ fields:
     required: true
 pages:
 - content/events/event-online.md
+- content/events/teacher-technology-training.md
