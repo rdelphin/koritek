@@ -3,7 +3,7 @@ title: Nesly Gelin
 position: Advisor
 date: 2018-10-11T04:00:00.000Z
 photo: ''
-weight: '6'
+weight: '3'
 ---
 
 ![](/LeslyGelin.jpg)
