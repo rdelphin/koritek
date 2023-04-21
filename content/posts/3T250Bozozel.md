@@ -1,3 +1,7 @@
+---
+_template: post
+---
+
 +++
 date = 2023-04-01T04:00:00Z
 itle = "Teacher Technology Trainer -  BOKOZEL"

@@ -1,3 +1,7 @@
+---
+_template: events
+---
+
 +++
 date = 2023-04-01T04:00:00Z
 location = "Bocozelle, Haiti"

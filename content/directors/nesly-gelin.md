@@ -1,3 +1,7 @@
+---
+_template: directors
+---
+
 +++
 date = "2018-12-19T00:00:00-05:00"
 photo = "/uploads/nesly-gelin.jpg"
