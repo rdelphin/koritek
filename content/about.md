@@ -6,6 +6,11 @@ type = "page"
 weight = 1
 
 +++
-KORITEK (KOminote RIral TEKnology) is a non-profit organization whose primary mission is to build different pathways for the technology wise illiterate students in the rural area;”Haiti”.  Our main aim is to equip their schools with the tools that are really required for a better education to overcome the technology gaps in Rural Area. We provide special trainings to the respected teachers so that they may able to educate the children of Haiti in a well manner. Unfortunately, there is no electricity and technology oriented devices such as computers or tablets in any of their school’s classrooms.
 
-We found enthusiasm for teaching and learning in the people of Haiti and that is why we have been taken the broad step to equip their schools with some source of electricity and some latest technology. We are trying to enable those areas as technology giants. We need a big hand from your business to support us in our light spreading program.
+Welcome to our nonprofit organization dedicated to transforming the lives of children in rural areas through technology education and soccer training. Our mission is to bridge the digital divide and promote physical well-being while fostering a sense of community and empowerment.
+
+Through our technology programs, we empower young minds with the skills needed to thrive in the digital age. In areas where access to technology is limited, we provide hands-on learning experiences, teaching coding, robotics, and digital literacy. By doing so, we prepare these children for future opportunities and enable them to participate actively in the digital world.
+
+Simultaneously, our soccer training initiatives encourage a healthy lifestyle and teach the value of teamwork, discipline, and perseverance. With limited recreational options in rural regions, we offer a platform for children to engage in physical activities, develop their athletic abilities, and build lifelong friendships.
+
+At the heart of our organization is the belief that every child deserves a chance to succeed, regardless of their background. By combining technology education and soccer training, we aim to equip these youngsters with a well-rounded skill set that extends beyond the classroom or the soccer field. Join us in making a lasting impact on these children's lives and fostering a brighter future for our communities.
