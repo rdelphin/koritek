@@ -1,6 +1,6 @@
 baseURL = "https://koritek.org"
 buildFuture = true
-description = "A non-profit organization focusing on technology development in Haiti."
+description = "A non-profit organization focusing on technology development and Soccer Training."
 languageCode = "en-us"
 theme = "koritek"
 title = "Kominote Riral Teknoloji - KoRiTek"
