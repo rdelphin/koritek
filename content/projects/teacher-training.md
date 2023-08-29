@@ -11,7 +11,7 @@ weight = 1
 
 We understand the impact of goods teaching on student achievement, and we know, there are many challenges that the schools face in rural areas of Haiti. Most of them serve student below the poverty line, they lack resources, and the teachers are not technology literate. The first step is to train the teachers in rural areas to get them know the technology and the advantages that come with it in teaching.
 
-Here is what the teachers will learn:
+Here is what the teachers will learn durant the training:
 	
 - Introduction to Computer 
 - Microsoft Word Basic
