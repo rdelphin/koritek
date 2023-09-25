@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/rdelphin/koritek/issues"
   },
-  "homepage": "https://github.com/rdelphin/koritek#readme"
+  "homepage": "https://github.com/rdelphin/koritek#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.29",
+    "tinacms": "^1.5.20"
+  }
 }

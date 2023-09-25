@@ -1,6 +1,20 @@
++++
+_template = "post"
++++
+
 ---
 _template: post
 ---
+
+
++++
+_template = "post"
++++
+
+---
+_template: post
+---
+
 
 +++
 date = 2023-04-01T04:00:00Z

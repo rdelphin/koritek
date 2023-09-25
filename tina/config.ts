@@ -11,7 +11,7 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 export default defineConfig({
   branch,
   clientId: "cd73b96d-a2b2-4010-b1e8-946bef75277f", // Get this from tina.io
-  token: "3a81e1640a9b3082be7ad1fe8566b300b41bcee6", // Get this from tina.io
+  token: "  3a81e1640a9b3082be7ad1fe8566b300b41bcee6", // Get this from tina.io
   client: { skip: true },
   build: {
     outputFolder: "admin",
@@ -30,7 +30,8 @@ export default defineConfig({
         label: "Events",
         name: "events",
         path: "content/events",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "**/*",
         },
@@ -50,7 +51,8 @@ export default defineConfig({
         label: "Projects",
         name: "projects",
         path: "content/projects",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "**/*",
         },
@@ -70,7 +72,8 @@ export default defineConfig({
         label: "Directors",
         name: "directors",
         path: "content/directors",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "**/*",
         },
@@ -90,7 +93,8 @@ export default defineConfig({
         label: "Posts",
         name: "posts",
         path: "content/posts",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "**/*",
         },
@@ -110,7 +114,8 @@ export default defineConfig({
         label: "Pages",
         name: "pages",
         path: "content",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "*",
         },
@@ -130,7 +135,8 @@ export default defineConfig({
         label: "Config",
         name: "config",
         path: ".",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         ui: {
           allowedActions: {
             create: false,

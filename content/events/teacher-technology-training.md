@@ -1,6 +1,20 @@
++++
+_template = "events"
++++
+
 ---
 _template: events
 ---
+
+
++++
+_template = "events"
++++
+
+---
+_template: events
+---
+
 
 +++
 date = 2023-04-01T04:00:00Z

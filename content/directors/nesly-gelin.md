@@ -1,10 +1,25 @@
++++
+_template = "directors"
++++
+
+---
+_template: directors
+---
+
+
++++
+_template = "directors"
++++
+
 ---
 title: Nesly Gelin
 position: Advisor
 date: 2018-10-16T04:00:00.000Z
 photo: ''
 weight: '3'
+_template: directors
 ---
+
 
 ![](/LeslyGelin.jpg)
 
