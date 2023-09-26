@@ -7,15 +7,11 @@ title = "Kominote Riral Teknoloji - KoRiTek"
 [[menu.main]]
 name = "Get Involved"
 url = "/volunteer/"
-weight = 6
+weight = 5
 [[menu.main]]
 name = "Events"
 url = "/events/"
-weight = 5
-[[menu.main]]
-name = "Soccer"
-url="/Soccer/"
-weight=4
+weight = 4
 [[menu.main]]
 name = "Projects"
 url = "/projects/"
