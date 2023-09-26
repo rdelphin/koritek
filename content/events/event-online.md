@@ -1,4 +1,12 @@
 ---
+_template: events
+---
+
++++
+_template = "events"
++++
+
+---
 {
   "_template": "events"
 }

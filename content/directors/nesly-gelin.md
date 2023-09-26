@@ -1,4 +1,12 @@
 ---
+_template: directors
+---
+
++++
+_template = "directors"
++++
+
+---
 {
   "_template": "directors"
 }

@@ -4,10 +4,10 @@
   "description": "A non-profit organization focusing on technology development in Haiti.",
   "main": "index.js",
   "scripts": {
-    "dev": "tinacms dev -c \"tinacms dev -c \"\"\"",
-    "build": "tinacms build && tinacms build && hugo",
+    "dev": "tinacms dev -c \"tinacms dev -c \"tinacms dev -c \"\"\"\"",
+    "build": "tinacms build && tinacms build && tinacms build && hugo",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tinacms build && next start"
+    "start": "tinacms build && tinacms build && next start"
   },
   "repository": {
     "type": "git",
