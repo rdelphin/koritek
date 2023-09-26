@@ -30,7 +30,8 @@ export default defineConfig({
         label: "Events",
         name: "events",
         path: "content/events",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "**/*",
         },
@@ -50,7 +51,8 @@ export default defineConfig({
         label: "Projects",
         name: "projects",
         path: "content/projects",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "**/*",
         },
@@ -70,7 +72,8 @@ export default defineConfig({
         label: "Directors",
         name: "directors",
         path: "content/directors",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "**/*",
         },
@@ -90,7 +93,8 @@ export default defineConfig({
         label: "Posts",
         name: "posts",
         path: "content/posts",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "**/*",
         },
@@ -110,7 +114,8 @@ export default defineConfig({
         label: "Pages",
         name: "pages",
         path: "content",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         match: {
           include: "*",
         },
@@ -130,7 +135,8 @@ export default defineConfig({
         label: "Config",
         name: "config",
         path: ".",
-        frontmatterFormat: "yaml",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         ui: {
           allowedActions: {
             create: false,
