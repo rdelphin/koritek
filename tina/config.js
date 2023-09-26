@@ -129,7 +129,7 @@ export default defineConfig({
         format: "toml",
         label: "Config",
         name: "config",
-        path: "/",
+        path: ".",
         frontmatterFormat: "yaml",
         ui: {
           allowedActions: {
