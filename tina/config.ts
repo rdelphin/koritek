@@ -1,9 +1,4 @@
 import { defineConfig } from "tinacms";
-import { directorsFields } from "./templates";
-import { eventsFields } from "./templates";
-import { pageFields } from "./templates";
-import { postFields } from "./templates";
-import { projectsFields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
@@ -15,12 +10,12 @@ export default defineConfig({
   client: { skip: true },
   build: {
     outputFolder: "admin",
-    publicFolder: "static",
+    publicFolder: "public",
   },
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: "static",
+      publicFolder: "public",
     },
   },
   schema: {
@@ -30,7 +25,6 @@ export default defineConfig({
         label: "Events",
         name: "events",
         path: "content/events",
-        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -50,7 +44,6 @@ export default defineConfig({
         label: "Projects",
         name: "projects",
         path: "content/projects",
-        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -70,7 +63,6 @@ export default defineConfig({
         label: "Directors",
         name: "directors",
         path: "content/directors",
-        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -90,7 +82,6 @@ export default defineConfig({
         label: "Posts",
         name: "posts",
         path: "content/posts",
-        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -110,7 +101,6 @@ export default defineConfig({
         label: "Pages",
         name: "pages",
         path: "content",
-        frontmatterFormat: "yaml",
         match: {
           include: "*",
         },
@@ -130,7 +120,6 @@ export default defineConfig({
         label: "Config",
         name: "config",
         path: "/",
-        frontmatterFormat: "yaml",
         ui: {
           allowedActions: {
             create: false,
