@@ -21,8 +21,8 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        format: "md",
-        label: "Events",
+        // format: "md",
+        // label: "Events",
         name: "events",
         path: "content/events",
         match: {
@@ -40,8 +40,8 @@ export default defineConfig({
         ],
       },
       {
-        format: "md",
-        label: "Projects",
+        // format: "md",
+        // label: "Projects",
         name: "projects",
         path: "content/projects",
         match: {
@@ -59,8 +59,8 @@ export default defineConfig({
         ],
       },
       {
-        format: "md",
-        label: "Directors",
+        // format: "md",
+        // label: "Directors",
         name: "directors",
         path: "content/directors",
         match: {
@@ -78,8 +78,8 @@ export default defineConfig({
         ],
       },
       {
-        format: "md",
-        label: "Posts",
+        // format: "md",
+        // label: "Posts",
         name: "posts",
         path: "content/posts",
         match: {
@@ -97,8 +97,8 @@ export default defineConfig({
         ],
       },
       {
-        format: "md",
-        label: "Pages",
+        // format: "md",
+        // label: "Pages",
         name: "pages",
         path: "content",
         match: {
