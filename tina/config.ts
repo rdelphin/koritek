@@ -29,14 +29,8 @@ export default defineConfig({
           include: "**/*",
         },
         fields: [
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body of Document",
-            description: "This is the markdown body",
-            isBody: true,
-          },
-          //...eventsFields(),
+
+          ...eventsFields(),
         ],
       },
       {
